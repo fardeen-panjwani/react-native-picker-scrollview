@@ -58,8 +58,10 @@ export default class ScrollPicker extends Component {
         let wrapperStyle = {
             height:this.wrapperHeight,
             flex:1,
-            backgroundColor:'#fafafa',
+            backgroundColor:'#fff',
             overflow:'hidden',
+            alignItems: 'center',
+            justifyContent: 'center',
         };
 
         let highlightStyle = {
@@ -69,8 +71,8 @@ export default class ScrollPicker extends Component {
             width:highlightWidth,
             borderTopColor:highlightColor,
             borderBottomColor:highlightColor,
-            borderTopWidth:StyleSheet.hairlineWidth,
-            borderBottomWidth:StyleSheet.hairlineWidth,
+            borderTopWidth:1,
+            borderBottomWidth:1,
         };
 
         return (
