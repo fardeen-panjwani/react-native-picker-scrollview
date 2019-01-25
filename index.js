@@ -78,7 +78,7 @@ export default class ScrollPicker extends Component {
     };
 
     return (
-      <View style={wrapperStyle}>
+      <View pointerEvents={this.props.pointerEvents} style={wrapperStyle}>
         <View style={highlightStyle} />
         <ScrollView
           ref={sview => {
